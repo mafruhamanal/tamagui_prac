@@ -8,6 +8,7 @@ import { MyStack } from "../../components/MyStack";
 import SelectDemo from "../../components/SelectDemo";
 import SpinnerDemo from "../../components/SpinnerDemo";
 import SwitchDemo from "../../components/SwitchDemo";
+import { ProgressBar } from "../../components/ProgressBar";
 
 export default function User() {
   const router = useRouter();
@@ -33,7 +34,7 @@ export default function User() {
       />
 
       <H6>Some Tamagui components in action.</H6>
-
+      <ProgressBar />
       <DialogDemo />
       <SelectDemo />
       <SpinnerDemo />
