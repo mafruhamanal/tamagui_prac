@@ -15,7 +15,7 @@ import config from "../tamagui.config";
 SplashScreen.preventAutoHideAsync();
 
 export default function Layout() {
-  const colorScheme = useColorScheme();
+  const colorScheme = "light_pink";
 
   const [loaded] = useFonts({
     Inter: require("@tamagui/font-inter/otf/Inter-Medium.otf"),
@@ -35,7 +35,7 @@ export default function Layout() {
       <Suspense fallback={<Text>Loading...</Text>}>
         <Theme name={colorScheme}>
           <ThemeProvider
-            value={colorScheme === "light" ? DefaultTheme : DarkTheme}
+            value={colorScheme === "light_pink" ? DefaultTheme : DarkTheme}
           >
             <Stack
               screenOptions={{
